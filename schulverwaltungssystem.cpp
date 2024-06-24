@@ -144,10 +144,8 @@ void delL() {
 
         if (isL >> lehrerID >> name >> nachname >> alter >> fach) {
             if (lehrerID != wahlID) {
-                // Keep teachers with IDs different from the specified one
                 updatedData << line << "\n";
             } else {
-                // Replace the deleted teacher's data with a blank line
                 updatedData << "\n";
             }
         }
@@ -164,7 +162,6 @@ void delL() {
         std::cerr << "Beim Schreiben in die Datei ‘lehrer.txt’ ist ein Fehler aufgetreten!\n";
     }
 }
-
 
 void delS() {
     std::string name;
@@ -191,10 +188,8 @@ void delS() {
 
         if (isL >> SuSID >> name >> nachname >> alter >> klasse >> raum) {
             if (SuSID != wahlID) {
-                // Keep teachers with IDs different from the specified one
                 updatedData << line << "\n";
             } else {
-                // Replace the deleted teacher's data with a blank line
                 updatedData << "\n";
             }
         }

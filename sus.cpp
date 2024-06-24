@@ -1,8 +1,6 @@
 #include "SuS.h"
 
-SuS::SuS(std::string name, std::string nachname, int alter, std::string klasse, int raum, int SuSID) : Person(name,
-                                                                                                              nachname,
-                                                                                                              alter) {
+SuS::SuS(std::string name, std::string nachname, int alter, std::string klasse, int raum, int SuSID) : Person(name, nachname, alter) {
     this->name = name;
     this->nachname = nachname;
     this->alter = alter;
