@@ -2,23 +2,29 @@
 #define PERSON_H
 
 #include <string>
+#include <iostream>
 
 class Person {
-protected:
-    std::string name;
-    int age;
 public:
-    Person(std::string name, int age);
+    std::string name;
+    std::string nachname;
+    int alter;
 
-    virtual ~Person();
+    Person(std::string name, std::string nachname, int alter);
+
+    virtual ~Person() = default;
 
     virtual void setName(const std::string &newName);
 
     virtual std::string getName();
 
-    virtual void setAge(const int &newAge);
+    virtual void setAlter(const int &newAlter);
 
-    virtual int getAge();
+    virtual int getAlter();
+
+    virtual void setNachname(const std::string &newNachname);
+
+    virtual std::string getNachname();
 };
 
 #endif // PERSON_H

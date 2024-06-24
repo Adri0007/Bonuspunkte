@@ -1,19 +1,36 @@
 #ifndef LEHRER_H
 #define LEHRER_H
 
-#include "person.h"
+#include "Person.h"
 
 class Lehrer : public Person {
-protected:
-    int room;
 public:
-    Lehrer(std::string name, int age, int room);
+    int lehrerID;
+    std::string fach;
 
-    virtual ~Lehrer();
+    Lehrer(std::string name, std::string nachname, int alter, std::string fach, int lehrerID);
 
-    virtual void setRoom(const int &newRoom);
+    virtual ~Lehrer() = default;
 
-    virtual int getRoom();
+    virtual void setName(const std::string &newName);
+
+    virtual std::string getName();
+
+    virtual void setAlter(const int &newAlter);
+
+    virtual int getAlter();
+
+    virtual void setFach(const std::string &newFach);
+
+    virtual std::string getFach();
+
+    virtual void setLehrerID(const int &newLehrerID);
+
+    virtual int getLehrerID();
+
+    virtual void setNachname(const std::string &newNachname);
+
+    virtual std::string getNachname();
 };
 
 #endif // LEHRER_H

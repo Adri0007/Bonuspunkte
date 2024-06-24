@@ -1,13 +1,11 @@
 #include "person.h"
-#include <iostream>
 #include <string>
 
-Person::Person(std::string name, int age) {
+Person::Person(std::string name, std::string nachname, int alter) {
     this->name = name;
-    this->age = age;
+    this->nachname = nachname;
+    this->alter = alter;
 }
-
-Person::~Person() = default;
 
 void Person::setName(const std::string &newName) {
     this->name = newName;
@@ -17,10 +15,18 @@ std::string Person::getName() {
     return name;
 }
 
-void Person::setAge(const int &newAge) {
-    this->age = newAge;
+void Person::setAlter(const int &newAlter) {
+    this->alter = newAlter;
 }
 
-int Person::getAge() {
-    return age;
+int Person::getAlter() {
+    return alter;
+}
+
+void Person::setNachname(const std::string &newNachname) {
+    this->nachname = newNachname;
+}
+
+std::string Person::getNachname() {
+    return nachname;
 }

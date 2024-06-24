@@ -4,21 +4,30 @@
 #include "person.h"
 
 class SuS : public Person {
-private:
-    int room;
-    std::string Class;
 public:
-    SuS(std::string name, int age, int room, std::string Class);
+    int raum;
+    std::string klasse;
+    int SuSID;
 
-    virtual ~SuS();
+    SuS(std::string name, std::string nachname, int alter, std::string klasse, int raum, int SuSID);
 
-    virtual void setRoom(const int &newRoom);
+    virtual ~SuS() = default;
 
-    virtual int getRoom();
+    virtual void setRaum(const int &newRaum);
 
-    virtual void setClass(const std::string &newClass);
+    virtual int getRaum();
 
-    virtual std::string getClass();
+    virtual void setKlasse(const std::string &newKlasse);
+
+    virtual std::string getKlasse();
+
+    virtual void setSuSID(const int &newSuSID);
+
+    virtual int getSuSID();
+
+    virtual void setNachname(const std::string &newNachname);
+
+    virtual std::string getNachname();
 };
 
 #endif // SUS_H

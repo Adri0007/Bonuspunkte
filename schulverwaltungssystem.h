@@ -1,26 +1,19 @@
 #ifndef SCHULVERWALTUNGSSYSTEM_H
 #define SCHULVERWALTUNGSSYSTEM_H
 
-#include <QMainWindow>
-#include "lehrer.h"
-#include "sus.h"
+#include "Lehrer.h"
+#include "SuS.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-    class schulverwaltungssystem;
-}
-QT_END_NAMESPACE
+void addL(int &countL);
 
-class schulverwaltungssystem : public QMainWindow {
-Q_OBJECT
+void addS(int &countsS);
 
-public:
-    schulverwaltungssystem(QWidget *parent = nullptr);
+void viewL();
 
-    ~schulverwaltungssystem();
+void viewS();
 
-private:
-    Ui::schulverwaltungssystem *ui;
-};
+void delL();
+
+void delS();
 
 #endif // SCHULVERWALTUNGSSYSTEM_H
