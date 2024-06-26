@@ -1,15 +1,15 @@
 #ifndef SUS_H
 #define SUS_H
 
-#include "person.h"
+#include "Person.h"
 
 class SuS : public Person {
 public:
     int raum;
-    std::string klasse;
+    QString klasse;
     int SuSID;
 
-    SuS(std::string name, std::string nachname, int alter, std::string klasse, int raum, int SuSID);
+    SuS(QString name, QString nachname, int alter, QString klasse, int raum, int SuSID);
 
     virtual ~SuS() = default;
 
@@ -17,17 +17,17 @@ public:
 
     virtual int getRaum();
 
-    virtual void setKlasse(const std::string &newKlasse);
+    virtual void setKlasse(const QString &newKlasse);
 
-    virtual std::string getKlasse();
+    virtual QString getKlasse();
 
     virtual void setSuSID(const int &newSuSID);
 
     virtual int getSuSID();
 
-    virtual void setNachname(const std::string &newNachname);
+    virtual void setNachname(const QString &newNachname);
 
-    virtual std::string getNachname();
+    virtual QString getNachname();
 };
 
 #endif // SUS_H

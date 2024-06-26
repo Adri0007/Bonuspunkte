@@ -1,0 +1,1 @@
+set(__QT_DEPLOY_TARGET_BonusOhneQtMitQt_FILE /Users/adrian/Desktop/BonusOhneQtMitQt/build/Qt_6_7_1_for_macOS-Debug/BonusOhneQtMitQt.app/Contents/MacOS/BonusOhneQtMitQt)

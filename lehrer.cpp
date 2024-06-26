@@ -1,7 +1,7 @@
 #include "Lehrer.h"
 #include "Person.h"
 
-Lehrer::Lehrer(std::string name, std::string nachname, int alter, std::string fach, int lehrerID) : Person(name, nachname, alter) {
+Lehrer::Lehrer(QString name, QString nachname, int alter, QString fach, int lehrerID) : Person(name, nachname, alter) {
     this->name = name;
     this->nachname = nachname;
     this->alter = alter;
@@ -9,19 +9,19 @@ Lehrer::Lehrer(std::string name, std::string nachname, int alter, std::string fa
     this->lehrerID = lehrerID;
 }
 
-void Lehrer::setFach(const std::string &newFach) {
+void Lehrer::setFach(const QString &newFach) {
     this->fach = newFach;
 }
 
-std::string Lehrer::getFach() {
+QString Lehrer::getFach() {
     return fach;
 }
 
-void Lehrer::setName(const std::string &newName) {
+void Lehrer::setName(const QString &newName) {
     this->name = newName;
 }
 
-std::string Lehrer::getName() {
+QString Lehrer::getName() {
     return name;
 }
 
@@ -41,10 +41,10 @@ int Lehrer::getLehrerID() {
     return lehrerID;
 }
 
-void Lehrer::setNachname(const std::string &newNachname) {
+void Lehrer::setNachname(const QString &newNachname) {
     this->nachname = newNachname;
 }
 
-std::string Lehrer::getNachname() {
+QString Lehrer::getNachname() {
     return nachname;
 }

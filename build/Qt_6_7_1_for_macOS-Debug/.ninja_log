@@ -1,0 +1,13 @@
+# ninja log v6
+723	804	1719412231564964437	BonusOhneQtMitQt.app/Contents/MacOS/BonusOhneQtMitQt	d418192d426c54dc
+26	489	1719400917465278638	CMakeFiles/BonusOhneQtMitQt.dir/SuS.cpp.o	9638d29f8b10d843
+28	723	1719412230869375853	CMakeFiles/BonusOhneQtMitQt.dir/mainwindow.cpp.o	5c73e664efdbb137
+5	25	1719412230846743043	/Users/adrian/Desktop/BonusOhneQtMitQt/build/Qt_6_7_1_for_macOS-Debug/BonusOhneQtMitQt_autogen/timestamp	40868bb1ef8213cc
+113	710	1719411839771420083	CMakeFiles/BonusOhneQtMitQt.dir/main.cpp.o	5bfbc54b0631c59c
+106	715	1719400862667844317	CMakeFiles/BonusOhneQtMitQt.dir/Person.cpp.o	e2343cd18d5a36dd
+113	713	1719411839771278875	CMakeFiles/BonusOhneQtMitQt.dir/BonusOhneQtMitQt_autogen/mocs_compilation.cpp.o	a071b6b1a8d2e2a1
+106	701	1719400862667762986	CMakeFiles/BonusOhneQtMitQt.dir/Lehrer.cpp.o	75f5c7157cede7fe
+5	25	1719412230846743043	/Users/adrian/Desktop/BonusOhneQtMitQt/build/Qt_6_7_1_for_macOS-Debug/BonusOhneQtMitQt_autogen/mocs_compilation.cpp	40868bb1ef8213cc
+5	25	1719412230846743043	BonusOhneQtMitQt_autogen/mocs_compilation.cpp	40868bb1ef8213cc
+102	136	1719313936985456203	CMakeFiles/BonusOhneQtMitQt.dir/Schulverwaltungssystem.cpp.o	f9331137d68c245
+5	25	1719412230846743043	BonusOhneQtMitQt_autogen/timestamp	40868bb1ef8213cc

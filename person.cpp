@@ -1,17 +1,16 @@
-#include "person.h"
-#include <string>
+#include "Person.h"
 
-Person::Person(std::string name, std::string nachname, int alter) {
+Person::Person(QString name, QString nachname, int alter) {
     this->name = name;
     this->nachname = nachname;
     this->alter = alter;
 }
 
-void Person::setName(const std::string &newName) {
+void Person::setName(const QString &newName) {
     this->name = newName;
 }
 
-std::string Person::getName() {
+QString Person::getName() {
     return name;
 }
 
@@ -23,10 +22,10 @@ int Person::getAlter() {
     return alter;
 }
 
-void Person::setNachname(const std::string &newNachname) {
+void Person::setNachname(const QString &newNachname) {
     this->nachname = newNachname;
 }
 
-std::string Person::getNachname() {
+QString Person::getNachname() {
     return nachname;
 }

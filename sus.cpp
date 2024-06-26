@@ -1,6 +1,7 @@
 #include "SuS.h"
+#include "Person.h"
 
-SuS::SuS(std::string name, std::string nachname, int alter, std::string klasse, int raum, int SuSID) : Person(name, nachname, alter) {
+SuS::SuS(QString name, QString nachname, int alter, QString klasse, int raum, int SuSID) : Person(name, nachname, alter) {
     this->name = name;
     this->nachname = nachname;
     this->alter = alter;
@@ -17,11 +18,11 @@ int SuS::getRaum() {
     return raum;
 }
 
-void SuS::setKlasse(const std::string &newKlasse) {
+void SuS::setKlasse(const QString &newKlasse) {
     this->klasse = newKlasse;
 }
 
-std::string SuS::getKlasse() {
+QString SuS::getKlasse() {
     return klasse;
 }
 
@@ -33,10 +34,10 @@ int SuS::getSuSID() {
     return SuSID;
 }
 
-void SuS::setNachname(const std::string &newNachname) {
+void SuS::setNachname(const QString &newNachname) {
     this->nachname = newNachname;
 }
 
-std::string SuS::getNachname() {
+QString SuS::getNachname() {
     return nachname;
 }

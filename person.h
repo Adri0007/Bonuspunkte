@@ -1,30 +1,29 @@
 #ifndef PERSON_H
 #define PERSON_H
 
-#include <string>
-#include <iostream>
+#include <QMainWindow>
 
 class Person {
 public:
-    std::string name;
-    std::string nachname;
+    QString name;
+    QString nachname;
     int alter;
 
-    Person(std::string name, std::string nachname, int alter);
+    Person(QString name, QString nachname, int alter);
 
     virtual ~Person() = default;
 
-    virtual void setName(const std::string &newName);
+    virtual void setName(const QString &newName);
 
-    virtual std::string getName();
+    virtual QString getName();
 
     virtual void setAlter(const int &newAlter);
 
     virtual int getAlter();
 
-    virtual void setNachname(const std::string &newNachname);
+    virtual void setNachname(const QString &newNachname);
 
-    virtual std::string getNachname();
+    virtual QString getNachname();
 };
 
 #endif // PERSON_H

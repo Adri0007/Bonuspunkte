@@ -6,31 +6,31 @@
 class Lehrer : public Person {
 public:
     int lehrerID;
-    std::string fach;
+    QString fach;
 
-    Lehrer(std::string name, std::string nachname, int alter, std::string fach, int lehrerID);
+    Lehrer(QString name, QString nachname, int alter, QString fach, int lehrerID);
 
     virtual ~Lehrer() = default;
 
-    virtual void setName(const std::string &newName);
+    virtual void setName(const QString &newName);
 
-    virtual std::string getName();
+    virtual QString getName();
 
     virtual void setAlter(const int &newAlter);
 
     virtual int getAlter();
 
-    virtual void setFach(const std::string &newFach);
+    virtual void setFach(const QString &newFach);
 
-    virtual std::string getFach();
+    virtual QString getFach();
 
     virtual void setLehrerID(const int &newLehrerID);
 
     virtual int getLehrerID();
 
-    virtual void setNachname(const std::string &newNachname);
+    virtual void setNachname(const QString &newNachname);
 
-    virtual std::string getNachname();
+    virtual QString getNachname();
 };
 
 #endif // LEHRER_H
